@@ -11,10 +11,10 @@ jobs:
     - name: Clonar o repositório
       uses: actions/checkout@v3
 
-    - name: instalar compilador GCC
+    - name: Instalar compilador GCC
       run: sudo apt update && sudo apt install build-essential -y
 
-    - name: compilar o programa    
+    - name: Compilar o programa    
       run: gcc github.c -o programa
 
     - name: Executar o programa 
